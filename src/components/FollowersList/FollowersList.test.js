@@ -74,7 +74,7 @@ describe("FollowersList", () => {
     });
     render(<MockFollowersList />);
     const followerElement = await screen.findByTestId("follower-item-0");
-    expect(followerElement).toBeInTheDocument();
+    expect(followerElement).not.toBeInTheDocument();
   });
 
   it("should render list of followers", async () => {
